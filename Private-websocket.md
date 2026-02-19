@@ -170,8 +170,18 @@ Response New Order:
   }
 }
 ```
+### Response Fills Order
 
-Response Fills Order:
+This event is sent whenever there is an update to an order, including partial fills and full fills.
+
+| **Field** | **Description**	|
+| -------- | --------------- |
+| order.executedQty| Cumulative executed quantity (total matched quantity so far)|
+| order.fillInformation.filledQty| Cumulative filled quantity — total quantity matched up to this execution (same concept as executedQty)|
+| order.fillInformation.qty| Per-trade quantity — quantity executed in this specific match (NOT cumulative)|
+
+Sample Response:
+
 ```json
 {
   "push": {
