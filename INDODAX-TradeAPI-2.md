@@ -78,8 +78,8 @@ Error codes are grouped by category:
 | **HTTP Status** | **Code** | **Error Description** |
 | --- | --- | --- |
 | 400 Bad Request | -1102 | A mandatory parameter was not sent, was empty/null, or malformed. |
-| 400 Bad Request | -1109 | Invalid parameter value. |
-| 400 Bad Request | -1112 | Order not found in Trade History. |
+| 400 Bad Request | 1109 | Invalid parameter value. |
+| 400 Bad Request | 1112 | Order not found in Trade History. |
 | 400 Bad Request | -1121 | Invalid symbol. |
 | 400 Bad Request | -1130 | Parameter value does not meet the required trading rules. |
 | 400 Bad Request | -1111 | Quantity validation failed. |
@@ -484,6 +484,14 @@ For example, requests to `BTCIDR` and `ETHIDR` are counted separately. This rate
   {
       "code": -1130,
       "msg": "Invalid parameter value.\n\nInvalid parameter 'price', required for LIMIT order"
+  }
+  ```
+
+- Quantity amount has more precision than allowed
+  ```json
+  {
+    "code": -1130,
+    "msg": "[quantity] amount has more precision than allowed (0)"
   }
   ```
 
