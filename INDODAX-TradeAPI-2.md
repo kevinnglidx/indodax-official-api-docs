@@ -79,7 +79,7 @@ Error codes are grouped by category:
 | --- | --- | --- |
 | 400 Bad Request | -1102 | A mandatory parameter was not sent, was empty/null, or malformed. |
 | 400 Bad Request | 1109 | Invalid parameter value. |
-| 400 Bad Request | 1112 | Order not found in Trade History. |
+| 400 Bad Request | 1112 | Order not found or not yet available. |
 | 400 Bad Request | -1121 | Invalid symbol. |
 | 400 Bad Request | -1130 | Parameter value does not meet the required trading rules. |
 | 400 Bad Request | -1111 | Quantity validation failed. |
