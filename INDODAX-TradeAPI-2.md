@@ -685,7 +685,7 @@ This REST endpoint serves to retrieve detailed information about a specific orde
 | **Name** | **Mandatory** | **Description** | **Type** | **Value** | **Default** |
 | --- | --- | --- | --- | --- | --- |
 | `symbol` | yes | Trading pair symbol | string | e.g., `BTCIDR`, `ETHIDR` |  |
-| `orderId` | yes | Unique identifier for the order | int64 | e.g., `6423` (if the full order ID is `btcidr-limit-6423`, use `6423` as the `orderId` value) |  |
+| `orderId` | yes | Unique identifier for the order | string | e.g., `6423` |  |
 | `origClientOrderId` | yes | Client-specified ID for the order set at order creation | string | e.g., `clientx-sj82ks82j` |  |
 
 > ℹ️ **Notes**
