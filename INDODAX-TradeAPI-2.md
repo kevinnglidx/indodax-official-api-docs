@@ -426,7 +426,7 @@ For example, requests to `BTCIDR` and `ETHIDR` are counted separately. This rate
   "price": "421004000",
   "origQty": "4988.0",
   "executedQty": "0.0",
-  "fullOrderId" : "btcidr-limit-1"
+  "fullOrderId" : "btcidr-limit-6423"
 }
 ```
 
@@ -536,7 +536,7 @@ This endpoint is limited to **30 requests per second per authenticated user** wh
   "stopPrice": "421003000",
   "origQty": "4988.0",
   "executedQty": "0.0",
-  "fullOrderId" : "btcidr-limit-1"
+  "fullOrderId" : "btcidr-limit-6423"
 }
 ```
 
@@ -630,7 +630,7 @@ This REST endpoint serves to retrieve all currently open orders for the authenti
     "status": "NEW",
     "type": "LIMIT",
     "time": 1723442692520,
-    "fullOrderId" : "btcidr-limit-1"
+    "fullOrderId" : "btcidr-limit-6423"
   }
 ]
 ```
@@ -711,7 +711,7 @@ This REST endpoint serves to retrieve detailed information about a specific orde
   "status": "NEW",
   "type": "LIMIT",
   "time": 1723442692520,
-  "fullOrderId" : "btcidr-limit-1"
+  "fullOrderId" : "btcidr-limit-6423"
 }
 ```
 
@@ -1452,7 +1452,7 @@ This REST endpoint serves to retrieve an account’s order history for a specifi
 | symbol | Trading pair symbol (e.g., aaveidr). |
 | side | Side of the order: [BUY or SELL](tapi-v2/enums.md#order-side-side). |
 | type | Type of the order: [LIMIT or MARKET](tapi-v2/enums.md#order-types). |
-| status | Current status of the order: [FILLED, CANCELLED, or REJECTED](tapi-v2/enums.md#order-status-status). |
+| status | Current status of the order: [FILLED, PARTIALLY_FILLED, CANCELLED, or REJECTED](tapi-v2/enums.md#order-status-status). |
 | price | Order price per unit of the base asset: IDR or USDT. |
 | oriQty | Original quantity specified in the order. |
 | executedQty | Executed quantity of the order |
