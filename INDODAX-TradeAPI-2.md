@@ -747,7 +747,7 @@ This REST endpoint serves to retrieve detailed information about a specific orde
   ```json
   {
       "code": -2013,
-      "msg": "Order not found."
+      "msg": "Order not found or not yet available."
   }
   ```
 
