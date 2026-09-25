@@ -22,7 +22,8 @@
 | **Environment**  | **Market Data Base URL**               | **Static Token**												|
 | ---------------- | ------------------------------ | --------------------------------------------------------------------------------------------------------- |
 | Production       | wss://ws3.indodax.com/ws/      | eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE5NDY2MTg0MTV9.UR1lBM6Eqh0yWz-PVirw1uPCxe60FdchR8eNVdsskeo |
-| Demo             | wss://ws.demo-indodax.com/ws/ | eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.OqWmyrtOvp_DvIdBnOgU9gyXhURkEOtu8brZtvwjYAw |
+
+> **Note:** Only Production environment is supported for external users. The DEMO environment is not available externally.
 
 After connected, you will have to **authenticate** yourself using request provided in [Authentication](#authentication) section below to make further request.
 

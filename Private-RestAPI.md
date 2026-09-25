@@ -18,6 +18,7 @@
 * All endpoints return either a JSON object or array.
 * Data is returned in **descending** order. newest first, oldest last.
 * All time and timestamp related fields are in **milliseconds**.
+* Only Production API credentials are supported for external users. The DEMO environment is not available externally.
 
 ## Error Codes
 * Any endpoint can return an ERROR
@@ -363,8 +364,6 @@ Provides access to essential trading functionalities and data for seamless integ
 > - You may experience under filled order if using `idr` parameter when create buy order. To solve this issue, simply send `btc` instead `idr` and use `order_type : "limit"`.
 > - You can create buy limit order using coin (eg: `btc`) as amount.
 > - You can use `order_type : "market"` to create market order.
-> - You can try the new API version by creating account in https://demo-indodax.com. You will receive balance for some coins, approximately 1 minute after successfully sign-up.
-> - These coins can be used for trade testing, but can't be withdrawn. You also can't deposit any coin to demo-indodax.com.
 >
 > As per January 2024,
 > - You can create order by adding infomartional `client_order_id` (eg: `client_order_id : "clientx-sj82ks82j"`)
